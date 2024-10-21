@@ -174,4 +174,8 @@ app.post("/movie/book-movie", async (req, res) => {
     // "2" < 0 ->
 });
 
-app.listen(6666);
+// app.listen(5000);
+const PORT = process.env.PORT || 8080;  // Choose a new port here
+app.listen(PORT, () => {
+  console.log(`Server is running on port ${PORT}`);
+});
